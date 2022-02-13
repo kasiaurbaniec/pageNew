@@ -1,3 +1,6 @@
+body{
+    background-color: #4f3b4c;
+}
 * {
     box-sizing: border-box;
     font-family: Arial, Verdana, sans-serif;
@@ -35,7 +38,9 @@ nav li {
     background-color: #ef9fa2;
     border: 1px solid #ef9fa2;
 }
-
+nav li:hover {
+  background-color: #FAEBD7;
+}
 article {
     background-color: black;
     padding: 50px;
