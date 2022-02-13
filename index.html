@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html LANG="pl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+  <meta name="Description" content="Strona poświęcoana zajęciom www" />
+  <meta name="Keywords" content="WWW;test" />
+  <meta name="Author" content="KU" />
+  <title>strona o wakacjach</title>
+
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body onload="menu('mainPage')">
+
+<header>
+<h2 style="color: #c06d8a;" >Strona Wakacji</h2>
+</header>
+
+<section>
+<nav>
+<ul>
+  <li  onclick="menu('mainPage')"> Ogólne </li>
+  <li onclick="menu('murals')"> Murale </li>
+  <li onclick="menu('miasta')"> Miasta </li>
+  <li onclick="menu('kontakt')"> Kontakt </li>
+</ul>
+</nav>
+<article>
+<div id="mainPage" class="main">
+  <p>Półwysep Jukatan słynie z pięknych, piaszczystych plaż oblewanych szmaragdowymi wodami Morza Karaibskiego i Zatoki Meksykańskiej, luksusowych kurortów oraz zawsze świetnej pogody. Turystów urzeka tu historia i kultura Majów z majestatycznymi ruinami starożytnych miast i piramid oraz niesamowita przyroda. Kąpiele w leczniczych błotach, nurkowanie w bajecznej rafie koralowej i cenotach, czy pływanie z żółwiami, będą niezapomnianym przeżyciem na fantastycznych  wakacjach w Meksyku.</p>
+  <a href="https://pl.wikipedia.org/wiki/Meksyk"> Wiki</a>
+</div>
+  <div id="murals" class="main">
+    <img src="header.jpg"  height="300" alt="mexican murals">
+    <img src="mur2.jpg"  height="300" alt="mexican murals">
+    <img src="mur3.jpg"  height="300" alt="mexican murals">
+    <img src="mur4.jpg"  height="300" alt="mexican murals">
+    <img src="mur5.jpg"  height="300" alt="mexican murals">
+     </div>
+  <div id="miasta" class="main">
+    <ul>
+      <li> Holbox </li>
+      <li> Tulum </li>
+      <li> Oaxaca </li>
+      <li> San Cristobal de Ls Casas </li>
+    </ul>
+       </div>
+  <div id="kontakt" class="main">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <form action="mailto:katarzyna.urbaniec@gmail.com" method="post">
+      <input type="text" name="name" placeholder="Your name..">
+      <input type="text" name="whats up" placeholder="napisz coś" >
+      <input type="submit" value="wyślij">
+    </form>
+
+
+  </div>
+
+</article>
+</section>
+
+<footer>
+Zrobiona dziś na zajęciach
+</footer>
+
+<script>
+  function menu(city){
+    var main = document.getElementsByClassName("main")
+
+    for (let m of main){
+      m.style.display = "none"
+    }
+    var cit = document.getElementById(city)
+    cit.style.display = "block"
+
+  }
+</script>
+	
+</body>
+</html>
